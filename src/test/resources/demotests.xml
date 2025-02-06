@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Demo Sanity" parallel="tests" thread-count="3">
+    <!--parallel="classes" thread-count="3" data-provider-thread-count="10"-->
+    <listeners>
+        <listener class-name="reporter.TestListener"/>
+       <!-- <listener class-name="io.qameta.allure.testng.AllureTestNg"/>-->
+    </listeners>
+    <test name="Chrome Test">
+        <parameter name="browser" value="CHROME"/>
+        <classes>
+            <class name="DemoTests"/>
+        </classes>
+    </test>
+    <test name="Firefox Test">
+        <parameter name="browser" value="FIREFOX"/>
+        <classes>
+            <class name="DemoTests"/>
+        </classes>
+    </test>
+    <test name="Edge Test">
+        <parameter name="browser" value="EDGE"/>
+        <classes>
+            <class name="DemoTests"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,5 @@
+[
+  {"username": "navneetsinghpatel", "password": "Admin@123", "expectedResult": "Success"},
+  {"username": "navneetsinghpatel", "password": "WrongPassword", "expectedResult": "Failure"},
+  {"username": "dinesharunachalam", "password": "Qaadmin@123", "expectedResult": "Success"}
+]
